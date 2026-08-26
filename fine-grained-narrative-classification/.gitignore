@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+
+# PyTorch / HuggingFace - outputs
+*.pt
+*.pth
+best_*.pt
+test_logits_*.npy
+test_y_*.npy
+test_texts_*.json
+results_*.json
+results_rerank_*.json
+
+# Data (large) - keep folder but ignore csv
+*.csv
+*.tsv
+*.parquet
+*.arrow
+*.bin
+!requirements.txt
+
+# Keep data/.gitkeep
+!data/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+.env.*
+*.key
+groq_keys.txt
